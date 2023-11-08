@@ -1,5 +1,5 @@
 {
-  "name": "uniqid",
+  "name": "@redlotus/uniqid",
   "version": "6.0.0",
   "description": "Unique ID Generator",
   "homepage": "http://github.com/adamhalasz/uniqid/",
