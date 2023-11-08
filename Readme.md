@@ -1,3 +1,8 @@
+![RedLotus-Logo-Dark](.github/base-logo-dark-mode.svg#gh-dark-mode-only)
+![RedLotus-Logo-Light](.github/base-logo-light-mode.svg#gh-light-mode-only)
+
+## Redlotus fork for actively maintained library
+
 ![uniqid logo](http://i.imgur.com/OrZC1lc.png)
 
 ![unqiid npm badge](http://img.shields.io/npm/v/uniqid.svg) ![uniqid npm downloads badge](https://img.shields.io/npm/dm/uniqid.svg)
@@ -7,7 +12,7 @@
 It will always create unique id's based on the current time, process and machine name.
 
 ```js
-// install with npm 
+// install with npm
 npm install uniqid
 
 // install with yarn
@@ -17,44 +22,40 @@ yarn add uniqid
 ## Usage
 
 ```js
-import uniqid from 'uniqid';
+import uniqid from "uniqid";
 
 console.log(uniqid()); // -> 4n5pxq24kpiob12og9
 console.log(uniqid(), uniqid()); // -> 4n5pxq24kriob12ogd, 4n5pxq24ksiob12ogl
 ```
 
-## Usage with Require 
+## Usage with Require
 
 ```js
-var uniqid = require('uniqid'); 
+var uniqid = require("uniqid");
 
 console.log(uniqid()); // -> 4n5pxq24kpiob12og9
 console.log(uniqid(), uniqid()); // -> 4n5pxq24kriob12ogd, 4n5pxq24ksiob12ogl
 ```
 
-## Usage in Browser 
+## Usage in Browser
+
 Take advantage of content delivery networks for Prototyping/Mockups
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="https://unpkg.com/browse/uniqid@5.5.0/UMD/uniqid.min.js"></script>
     <script>
-        alert(`Here is an ID: ${uniqid()}`)
+      alert(`Here is an ID: ${uniqid()}`);
     </script>
 
     <title>Your App</title>
-</head>
+  </head>
 
-<body>
-
-</body>
-
+  <body></body>
 </html>
 ```
-
-
 
 ## Features
 
@@ -74,7 +75,7 @@ Take advantage of content delivery networks for Prototyping/Mockups
 
 Generate 18 byte unique id's based on the time, process id and mac address. Works on multiple processes and machines.
 
-```js       "zu4850jkyfoxok"
+```js "zu4850jkyfoxok"
 uniqid() -> "4n5pxq24kpiob12og9"
 uniqid('hello-') -> "hello-4n5pxq24kpiob12og9"
 uniqid('hello-', '-goodbye') -> "hello-4n5pxq24kpiob12og9-goodbye"
@@ -105,6 +106,7 @@ uniqid.time() -> "iob0ucoj"
 Since browsers don't provide a Process ID and in most cases neither give a Mac Address using uniqid from Webpack, Browserify and Vite falls back to `uniqid.time()` for all the other methods too. The browser is the single process, single machine case anyway.
 
 ## Debug
+
 Debug messages are turned off by default as of `v4.1.0`. To turn on debug messages you'll need to set `uniqid_debug` to `true` before you require the module.
 
 ```js
@@ -112,7 +114,7 @@ Debug messages are turned off by default as of `v4.1.0`. To turn on debug messag
 module.uniqid_debug = true;
 
 // require the module
-var uniqid = require('uniqid');
+var uniqid = require("uniqid");
 ```
 
 ## **License**
