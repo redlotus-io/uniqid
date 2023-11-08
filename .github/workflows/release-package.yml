@@ -6,7 +6,7 @@ name: release-package
 on:
   push:
     branches:
-      - "main"
+      - "master"
 jobs:
   publish-packages:
     runs-on: ubuntu-latest
